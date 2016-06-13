@@ -1,0 +1,51 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{minted}
+
+\title[Summary]{Systematic Mapping Study on Megamodels}
+\author{Matthias Barde \& Marco Brack, University of Koblenz-Landau}
+\institute{SLE course SS 2016 (\url{http://www.softlang.org/course:sle16})}
+\date{2016-06-16}
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}{Some Frametitle}
+  \begin{itemize}
+    \item Some Item
+    \item Another Item
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Some Frame with Code}
+  \inputminted[frame=single, linenos]{JavaScript}{some-code.js}
+\end{frame}
+
+\begin{frame}{Som Frame with a Figure }
+  \begin{figure}[p]
+    \centering
+    \includegraphics[scale=0.185]{somefigure}
+    \caption{Caption of Some Figure}
+    \label{fig:somefigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{References}
+  \begin{itemize}
+    \item Some Reference
+  \end{itemize}
+\end{frame}
+
+\end{document}
