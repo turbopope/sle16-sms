@@ -5,6 +5,7 @@
 \usepackage{csvsimple}
 
 \graphicspath{{img/}}
+\bibliographystyle{alphadin}
 
 \title[Summary]{Systematic Mapping Study on Megamodels}
 \author{Matthias Barde \& Marco Brack, University of Koblenz-Landau}
@@ -28,6 +29,7 @@
 \begin{frame}{Systematic Mapping Study}
 \begin{figure}
 	\includegraphics[width=1.0\textwidth]{sms_full}
+	\caption{From \textit{Literature Studies in Software Engineering} \cite{litstud}}
 \end{figure}
 \end{frame}
 
@@ -41,10 +43,69 @@
 \begin{enumerate}
 	\item How do researchers define megamodeling?
 	\item What kinds of model elements are used?
-	\item How did the field of megamodeling evolve?
-	\item Do the megamodels have any practical purpose?
-	\item Do the megamodels reuse existing technology?
+	\item Which practical purposes do the megamodels serve, if any?
+	\item Which technology is used to implement the megamodels?	
 \end{enumerate}
+\end{frame}
+
+\begin{frame}{Research Question 1}
+\begin{tabular}{|l|p{9cm}|}\hline
+\textbf{RQ 1} & How do researchers define megamodeling?\\\hline
+\textbf{Why?} & There does not exist a common definition of me\-ga\-mo\-dels to which everyone relates to. So it is interesting to get an overview over how different researchers define megamodels.\\\hline
+\textbf{How?} & Check if papers provide whether an explicit or implicit definition of megamodels.\\\hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Example}
+From introduction of \textit{Toward Mega Models for Maintaining Timing Properties of Automotive Systems} \cite{Neumann_models2010}:
+\begin{center}
+\includegraphics[width=1.0\textwidth]{ex_rq1}
+\end{center}
+\end{frame}
+
+\begin{frame}{Research Question 2}
+\begin{tabular}{|l|p{9cm}|}\hline
+\textbf{RQ 2} & What kinds of model elements are used?\\\hline
+\textbf{Why?} & Megamodels have a wide range of imaginable application scenarios. Getting an overview over which elements are used in megamodels leads to an overview over which scenarios are covered by megeamodels.\\\hline
+\textbf{How?} & Check if papers describe explicit or implicit which elements are used in given megamodels. This could be concrete or abstract elements.\\\hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Example}
+From introduction of \textit{A Megamodel for Process Tailoring and Evolution} \cite{tailoring}:
+\begin{center}
+\includegraphics[width=1.0\textwidth]{ex_rq2}
+\end{center}
+\end{frame}
+
+\begin{frame}{Research Question 3}
+\begin{tabular}{|l|p{9cm}|}\hline
+\textbf{RQ 3} & Which practical purposes do the megamodels serve, if any?\\\hline
+\textbf{Why?} & It is interesting to get an overview for what megamodels can be used in practice.\\\hline
+\textbf{How?} & Check if megamodels in the papers are 	instrumentalized to fulfill a concretely described practical purpose.\\\hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Example}
+From abstract of \textit{A Megamodel for Process Tailoring and Evolution} \cite{tailoring}:
+\begin{center}
+\includegraphics[width=1.0\textwidth]{ex_rq3}
+\end{center}
+\end{frame}
+
+\begin{frame}{Research Question 4}
+\begin{tabular}{|l|p{9cm}|}\hline
+\textbf{RQ 4} & Which technology is used to implement the megamodels?\\\hline
+\textbf{Why?} & Since megamodelling is a (relatively) new approach it is interesting to get an overview over existing technologies in this field.\\\hline
+\textbf{How?} & Check if papers describe that mentioned megamodels were actually implemented. An implementation has to provide functionalities and some kind of reusability (i.e. a graphical representation of a megemodel is not an implementation).\\\hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Example}
+From introduction of \textit{A Megamodel for Process Tailoring and Evolution} \cite{tailoring}:
+\begin{center}
+\includegraphics[width=1.0\textwidth]{ex_rq4}
+\end{center}
 \end{frame}
 
 \begin{frame}{Review Scope \& Conduct Search}
@@ -112,12 +173,8 @@ Term \textit{megamodel} must be contained in title or abstract.
 \end{figure}
 \end{frame}
 
-\begin{frame}{Sources}
-\begin{figure}
-  \begin{itemize}
-  	\item \emph{Literature Studies in Software Engineering} by Marcel Heinz
-  \end{itemize}
-\end{figure}
+\begin{frame}
+  \bibliography{slides}
 \end{frame}
 
 \begin{frame}
