@@ -1,3 +1,5 @@
+task :default => :build
+
 task :build do
   sh "pdflatex presentation"
   sh "pdflatex presentation"
